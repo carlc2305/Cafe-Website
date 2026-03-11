@@ -61,6 +61,7 @@ section {
 .contact-form {
   max-width: 500px;
   margin: auto;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -89,4 +90,29 @@ section {
 
 .contact-form button:hover {
   background: #3f2614;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info h3 {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 4px 0;
+}
+
+.hours {
+  margin: 15px auto;
+  border-collapse: collapse;
+}
+
+.hours td {
+  padding: 6px 20px;
+}
+
+.hours td:first-child {
+  font-weight: bold;
 }
