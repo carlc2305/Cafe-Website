@@ -131,8 +131,11 @@ nav a:hover {
   text-align: center;
 }
 
-.featured h2 {
-  margin-bottom: 25px;
+.featured h2,
+.about-preview h2,
+.hours-preview h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .featured-grid {
@@ -161,17 +164,25 @@ nav a:hover {
 
 /* CTA BUTTON SECTION */
 .cta {
+  max-width: 1100px;
+  margin: 40px auto;
   text-align: center;
-  margin: 30px auto;
   padding: 0 20px;
+}
+
+.cta .menu-button {
+  display: inline-block;
 }
 
 .about-preview,
 .hours-preview {
+  max-width: 1100px;
+  margin: 40px auto;
   padding: 40px 20px;
   text-align: center;
 }
 
+/* PRODUCTS PAGE */
 .products {
   padding: 40px 20px;
   text-align: center;
@@ -180,12 +191,14 @@ nav a:hover {
 .products h1 {
   margin-bottom: 30px;
   font-size: 2.2rem;
+  text-align: center;
 }
 
 .products h2 {
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 1.6rem;
+  text-align: center;
 }
 
 .menu-grid {
@@ -236,6 +249,7 @@ nav a:hover {
   margin-bottom: 12px;
 }
 
+/* BUTTONS */
 button,
 .menu-button,
 .add-to-cart,
@@ -262,6 +276,7 @@ button:hover,
   background: #3f2616;
 }
 
+/* CONTACT PAGE */
 .contact {
   text-align: center;
   padding: 40px 25px;
@@ -318,6 +333,7 @@ button:hover,
   font-weight: bold;
 }
 
+/* CART PAGE */
 .cart-page {
   max-width: 750px;
   text-align: center;
@@ -338,6 +354,7 @@ button:hover,
   font-size: 1.8rem;
 }
 
+/* CHECKOUT PAGE */
 .checkout {
   max-width: 650px;
 }
@@ -348,6 +365,7 @@ button:hover,
   font-size: 1.8rem;
 }
 
+/* CATEGORY PAGE */
 .category-grid {
   display: flex;
   flex-direction: column;
@@ -375,6 +393,7 @@ button:hover,
   text-decoration: underline;
 }
 
+/* FOOTER */
 footer {
   background: #5c3a21;
   color: white;
@@ -383,6 +402,7 @@ footer {
   margin-top: 50px;
 }
 
+/* DESKTOP */
 @media (min-width: 768px) {
   .menu-grid {
     flex-direction: row;
@@ -411,6 +431,7 @@ footer {
   }
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
