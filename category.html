@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories | Carl's Cafe</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <p>Category Page</p>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="category.html">Categories</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+</nav>
+
+<header>
+  <h1>Categories</h1>
+</header>
+
+<section class="categories">
+  <p>Browse our drink and snack categories.</p>
+</section>
+
+<section class="categories">
+
+  <h1>Browse Categories</h1>
+
+  <div class="category-grid">
+
+    <div class="category-card">
+      <h2>Hot Drinks</h2>
+      <p>Espresso, Latte, Cappuccino and more.</p>
+      <a href="products.html#hot">View Products</a>
+    </div>
+
+    <div class="category-card">
+      <h2>Cold Drinks</h2>
+      <p>Iced coffee, lemonade and refreshing drinks.</p>
+      <a href="products.html#cold">View Products</a>
+    </div>
+
+    <div class="category-card">
+      <h2>Snacks</h2>
+      <p>Croissants, muffins and tasty treats.</p>
+      <a href="products.html#snacks">View Products</a>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>

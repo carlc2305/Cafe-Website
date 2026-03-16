@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cafe Website</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -11,9 +12,11 @@
 
 <nav>
   <a href="index.html">Home</a>
+  <a href="category.html">Categories</a>
   <a href="products.html">Products</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
+  <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
 </nav>
 
 <header>
@@ -26,6 +29,46 @@
     <p>Fresh Coffee, delicious snacks, and a cosy atmosphere.</p>
   </div>
 </section>
+
+
+<section class="featured">
+  <h2>Customer Favourites</h2>
+  
+  <div class="featured-grid">
+    
+    <div class="featured-item">
+      <img src="images/Latte.png" alt="Latte">
+      <h3>Latte</h3>
+      <p>Fresh espresso with steamed milk</p>
+    </div>
+    
+    <div class="featured-item">
+      <img src="images/Cappuccino.png" alt="Cappuccino">
+      <h3>Cappuccino</h3>
+      <p>Rich espresso with foamed milk</p>
+    </div>
+    
+    <div class="featured-item">
+      <img src="images/croissant.png" alt="Croissant">
+      <h3>Croissant</h3>
+      <p>Fresh baked buttery croissant</p>
+    </div>
+    
+  </div>
+</section>
+
+<a class="menu-button" href="products.html">View Our Products</a>
+
+<section class="hours-preview">
+<h2>Opening Hours</h2>
+  <p>Monday – Friday: 8am – 6pm</p>
+  <p>Saturday: 9am – 5pm</p>
+  <p>Sunday: 9am – 3pm</p>
+</section>
+
+<footer>
+  <p>© 2026 Carl's Cafe | Fresh coffee and homemade snacks</p>
+</footer>
 
 <script src="js/script.js"></script>
 

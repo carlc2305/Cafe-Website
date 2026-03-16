@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cafe Website</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -11,65 +12,146 @@
 
 <nav>
   <a href="index.html">Home</a>
+  <a href="category.html">Categories</a>
   <a href="products.html">Products</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
+  <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
 </nav>
 
 
 <section class="menu">
   <h1>Our Products</h1>
 
-  <h2>Hot Drinks</h2>
-  <div class="menu-grid">
-    <div class="menu-item">
-      <img src="images/latte.png" alt="Latte coffee">
-      <h3>Latte</h3>
-      <p>Fresh espresso with steamed milk</p>
-      <span class="price">£3.50</span>
-    </div>
+<h2>Hot Drinks</h2>
+<div class="menu-grid">
 
-    <div class="menu-item">
-      <img src="images/cappuccino.png" alt="Cappuccino">
-      <h3>Cappuccino</h3>
-      <p>Rich espresso with foamed milk</p>
-      <span class="price">£3.80</span>
-    </div>
+  <div class="menu-item">
+    <img src="images/latte.png" alt="Latte coffee">
+    <h3>Latte</h3>
+    <p>Fresh espresso with steamed milk</p>
+    <span class="price">£3.50</span>
+    <button class="add-to-cart" data-name="latte" data-price="3.50">Add to Cart</button>
   </div>
+
+  <div class="menu-item">
+    <img src="images/cappuccino.png" alt="Cappuccino">
+    <h3>Cappuccino</h3>
+    <p>Rich espresso with foamed milk</p>
+    <span class="price">£3.80</span>
+    <button class="add-to-cart" data-name="Cappuccino" data-price="3.80">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/espresso.png" alt="Espresso">
+    <h3>Espresso</h3>
+    <p>Strong and rich single-shot coffee</p>
+    <span class="price">£2.20</span>
+    <button class="add-to-cart" data-name="Espresso" data-price="2.20">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/mocha.png" alt="Mocha">
+    <h3>Mocha</h3>
+    <p>Smooth espresso with chocolate and steamed milk</p>
+    <span class="price">£4.10</span>
+    <button class="add-to-cart" data-name="Mocha" data-price="4.10">Add to Cart</button>
+  </div>
+
+</div>
 
   <h2>Cold Drinks</h2>
-  <div class="menu-grid">
-    <div class="menu-item">
-      <img src="images/iced-latte.png" alt="Iced latte">
-      <h3>Iced Latte</h3>
-      <p>Chilled espresso with milk and ice</p>
-      <span class="price">£4.00</span>
-    </div>
 
-    <div class="menu-item">
-      <img src="images/lemonade.png" alt="Lemonade">
-      <h3>Lemonade</h3>
-      <p>Fresh and refreshing homemade lemonade</p>
-      <span class="price">£2.80</span>
-    </div>
+<div class="menu-grid">
+
+  <div class="menu-item">
+    <img src="images/iced-latte.png" alt="Iced Latte">
+    <h3>Iced Latte</h3>
+    <p>Chilled espresso with milk and ice</p>
+    <span class="price">£4.00</span>
+    <button class="add-to-cart" data-name="Iced Latte" data-price="4.00">
+      Add to Cart
+    </button>
   </div>
 
-  <h2>Snacks</h2>
-  <div class="menu-grid">
-    <div class="menu-item">
-      <img src="images/croissant.png" alt="Croissant">
-      <h3>Croissant</h3>
-      <p>Fresh baked buttery croissant</p>
-      <span class="price">£2.50</span>
-    </div>
-
-    <div class="menu-item">
-      <img src="images/muffin.png" alt="Blueberry muffin">
-      <h3>Blueberry Muffin</h3>
-      <p>Soft muffin packed with blueberries</p>
-      <span class="price">£2.90</span>
-    </div>
+  <div class="menu-item">
+    <img src="images/lemonade.png" alt="Lemonade">
+    <h3>Lemonade</h3>
+    <p>Fresh and refreshing homemade lemonade</p>
+    <span class="price">£2.80</span>
+    <button class="add-to-cart" data-name="Lemonade" data-price="2.80">
+      Add to Cart
+    </button>
   </div>
+
+  <div class="menu-item">
+    <img src="images/iced-americano.png" alt="Iced Americano">
+    <h3>Iced Americano</h3>
+    <p>Chilled espresso with cold water and ice</p>
+    <span class="price">£3.40</span>
+    <button class="add-to-cart" data-name="Iced Americano" data-price="3.40">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/iced-tea.png" alt="Iced Tea">
+    <h3>Iced Tea</h3>
+    <p>Refreshing brewed tea served over ice</p>
+    <span class="price">£2.90</span>
+    <button class="add-to-cart" data-name="Iced Tea" data-price="2.90">
+      Add to Cart
+    </button>
+  </div>
+
+</div>
+
+ <h2>Snacks</h2>
+
+<div class="menu-grid">
+
+  <div class="menu-item">
+    <img src="images/croissant.png" alt="Croissant">
+    <h3>Croissant</h3>
+    <p>Fresh baked buttery croissant</p>
+    <span class="price">£2.50</span>
+    <button class="add-to-cart" data-name="Croissant" data-price="2.50">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/muffin.png" alt="Blueberry Muffin">
+    <h3>Blueberry Muffin</h3>
+    <p>Soft muffin packed with blueberries</p>
+    <span class="price">£2.90</span>
+    <button class="add-to-cart" data-name="Blueberry Muffin" data-price="2.90">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/brownie.png" alt="Chocolate Brownie">
+    <h3>Chocolate Brownie</h3>
+    <p>Rich chocolate brownie with a soft centre</p>
+    <span class="price">£2.70</span>
+    <button class="add-to-cart" data-name="Chocolate Brownie" data-price="2.70">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/banana-bread.png" alt="Banana Bread">
+    <h3>Banana Bread</h3>
+    <p>Moist homemade banana loaf slice</p>
+    <span class="price">£2.60</span>
+    <button class="add-to-cart" data-name="Banana Bread" data-price="2.60">
+      Add to Cart
+    </button>
+  </div>
+
+</div>
+
 </section>
 
 
