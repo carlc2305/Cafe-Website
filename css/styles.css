@@ -475,3 +475,12 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
+#toast {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#toast.show {
+  opacity: 1;
+}

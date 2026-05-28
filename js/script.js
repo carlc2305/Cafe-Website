@@ -24,6 +24,19 @@ function updateCartCount() {
   }
 }
 
+const existingItem = cart.find(
+  item => item.id === product.id
+);
+
+if (existingItem) {
+  existingItem.quantity++;
+} else {
+  cart.push({
+    ...product,
+    quantity: 1
+  });
+}
+
 const addToCartButtons = document.querySelectorAll(".add-to-cart");
 
 addToCartButtons.forEach(button => {
