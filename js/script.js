@@ -42,6 +42,17 @@ addToCartButtons.forEach(button => {
 const cartItemsContainer = document.getElementById("cart-items");
 const cartTotal = document.getElementById("cart-total");
 
+function addToCart(product) {
+  cart.push(product);
+
+  const message = document.getElementById("toast");
+  message.classList.add("show");
+
+  setTimeout(() => {
+    message.classList.remove("show");
+  }, 2000);
+}
+
 function renderCart() {
   if (!cartItemsContainer || !cartTotal) return;
 
